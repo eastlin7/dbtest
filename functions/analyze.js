@@ -79,10 +79,13 @@ function findCharacterIndex(character, arr) {
  * @param {*} b second elem
  */
 function sortJsonListAlphabetically(a, b) {
-    if (Object.keys(a) >Object.keys(b)) {
-        return true;
-    }
-    return false;
+    if (Object.keys(a)[0] >Object.keys(b)[0]) {
+        return 1;
+    }  
+    if (Object.keys(a)[0] < Object.keys(b)[0]) {
+        return -1;
+    } 
+    return 0;
 }
 
 module.exports.analyze = analyze;
