@@ -55,7 +55,8 @@ function buildCharacterArray(input) {
             characterCount[index] = characterCount[index][letter] = {[letter]: characterCount[index][letter]+1};
         }
     }
-    return characterCount.sort(sortJsonListAlphabetically);
+    characterCount.sort(sortJsonListAlphabetically)
+    return characterCount;
 }
 
 
